@@ -1,0 +1,88 @@
+define = CONSTANT      $ = variable     \" asdas \"
+echo $pi * $radius**2;       power of
+echo floor($pi);             round down
+echo ceil($pi);              round up
+
+print_r($name);              print out readable array
+array_push($name, 'James');    Adds to end
+$popped = array_pop($name);    Removes last array and puts it under a variable
+count($name)                 Array length
+$nameThree = array_merge($name, $nameTwo);       Merge two array together
+
+$blogs = [
+	   ['title' => 'mario party', 'author' => 'Someone'],       //Associotive multi-dimensional array
+	   ['title' => 'mario party', 'author' => 'Someone']
+         ];
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------
+LOOPS 
+
+<?php
+
+    $products = [
+        ['name' => 'shiny star', 'price' => 20],
+        ['name' => 'green shell', 'price' => 10],
+        ['name' => 'red shell', 'price' => 15]
+    ];
+
+?>
+
+
+HTML
+
+<h1>Products</h1>
+<ul>
+    <?php foreach($products as $product){ ?>
+
+        <h3> <?php echo $product['name']; ?> </h3>
+        <p> £<?php echo $product['price]' ?> </p>
+
+    <?php } ?>
+
+</ul>
+
+
+
+
+------------------------------------------------------------------------------------------------
+LOOPS CONT
+
+foreach($products as $product) {
+
+    if($product['price'] < 15 && $product['price'] > 2) {
+        echo $product['name'] . '<br />';
+    }
+}
+
+for($i; i < 5; i++) {
+    
+}
+
+------------------------------------------------------------------------------------------------
+
+ <div>
+    <ul>
+        <?php foreach($products as $product) {?>
+            <?php if($product['price'] > 15) { ?>
+                <li><?php echo $product['name']?></li>
+            <?php } ?>    
+        <?php } ?>           
+    </ul>
+ </div>
+
+------------------------------------------------------------------------------------------------------------------
+FUNCTIONS
+ 
+    function formatProduct($product){
+        return "{$product['name']} costs £{$product['price']} to buy <br />";
+    }
+
+$formatted = formatProduct(['name' => 'gold star', 'price' => '20']);
+echo $formatted;
