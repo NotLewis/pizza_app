@@ -46,7 +46,7 @@
                         </ul>
                     </div>
                     <div class="card-action right-align">
-                        <a href="details.php?id=<?php echo $pizza['id']; ?>" class="brand-text">More infoo</a> 
+                        <a href="details.php?id=<?php echo $pizza['id']; ?>" class="brand-text">More infooo</a> 
                         <!-- for individual page about pizza. Redirect to details page alongside pizza id -->
                     </div>
                 </div>
